@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Cobrinha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="cobra.png"> 
+</head>
+<body>
+
+    <!-- Área do jogo onde a cobrinha e a fruta aparecem -->
+    <div id="gameArea">
+        <div id="fruit"></div> <!-- Fruta do jogo -->
+    </div>
+
+    <!-- Exibição da pontuação -->
+    <div id="score">Pontuação: 0</div>
+
+    <!-- Botão que inicia o jogo -->
+    <button id="startButton">Começar Jogo</button>
+
+    <!-- Modal de fim de jogo (aparece ao perder) -->
+    <div id="gameOverModal" class="modal">
+        <div class="modal-content">
+            <h2>Fim de Jogo!</h2>
+            <p id="finalScore"></p>
+            <button id="closeModal">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Script do jogo -->
+    <script src="script.js"></script>
+</body>
+</html>
